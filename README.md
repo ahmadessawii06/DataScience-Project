@@ -15,7 +15,7 @@ The project uses:
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborn
+
 
 ## Project Steps
 
@@ -79,6 +79,6 @@ The project provides:
 3. Run the notebook cells from top to bottom.
 4. Review the visualizations and conclusions.
 
-## Author
-Customer Behavior Analysis Project using Python and Jupyter Notebook.
+## Authors
+Ahmad Essawii $ Mojahed Alkayyal.
 """
