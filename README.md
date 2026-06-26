@@ -1,5 +1,6 @@
 # 🛒 Online Shopping Customer Behavior Analysis
 
+![hero image](hero.png)
 ## 📌 Overview
 This project analyzes online shopping customer data to uncover behavioral patterns and business insights.
 
