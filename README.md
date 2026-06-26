@@ -1,84 +1,106 @@
+# 🛒 Online Shopping Customer Behavior Analysis
 
-## Overview
-This project analyzes customer behavior data using Python.
+## 📌 Overview
+This project analyzes online shopping customer data to uncover behavioral patterns and business insights.
 
-The goal is to:
-- Clean and prepare the dataset.
-- Handle missing values and invalid data.
-- Detect and treat outliers.
-- Explore customer behavior through statistics and visualizations.
-- Study relationships between variables.
-- Draw useful business insights from the data.
+**Goals:**
+- Clean and prepare the dataset for analysis
+- Handle missing values and invalid data
+- Detect and treat outliers
+- Explore customer behavior through statistics and visualizations
+- Study relationships between variables
+- Draw actionable business insights
 
-## Tools and Libraries
-The project uses:
-- Pandas
-- NumPy
-- Matplotlib
+---
 
+## 🛠️ Tools & Libraries
 
-## Project Steps
+| Library | Purpose |
+|--------|---------|
+| `Pandas` | Data manipulation and analysis |
+| `NumPy` | Numerical computations |
+| `Matplotlib` | Data visualization |
 
-### 1. Import Libraries
+---
+
+## 🗂️ Project Steps
+
+### 1. 📦 Import Libraries
 Load the Python libraries needed for data analysis and visualization.
 
-### 2. Read the Dataset
-Load the dataset into a Pandas DataFrame.
+### 2. 📂 Load the Dataset
+Read the dataset into a Pandas DataFrame using `pd.read_csv()`.
 
-### 3. Explore the Data
-Perform an initial inspection of the dataset:
-- View sample records
-- Check data types
+### 3. 🔍 Explore the Data
+Initial inspection of the dataset:
+- Preview sample records
+- Check data types and structure
 - Generate summary statistics
 - Check dataset dimensions
 
-### 4. Data Cleaning
-Clean and prepare the data by:
-- Standardizing column names
-- Fixing incorrect data types
-- Handling invalid values
-- Removing duplicate records
+### 4. 🧹 Data Cleaning
+Prepare the data for analysis:
+- Standardize column names (CamelCase format)
+- Fix incorrect data types
+- Handle invalid entries using `pd.to_numeric(errors='coerce')`
+- Remove duplicate records
 
-### 5. Handle Missing Values
-Fill missing values using suitable imputation techniques to keep the dataset complete.
+### 5. 🩹 Handle Missing Values
+Fill missing values using appropriate imputation:
+- **Numeric columns** → filled with the **median**
+- **Categorical columns** → filled with the **mode**
 
-### 6. Handle Outliers
-Use boxplots and the IQR method to identify outliers.
-Outliers in variables such as TimeOnSite, PurchaseAmount, and ClickRate are treated to reduce their effect on the analysis.
+### 6. 📊 Outlier Detection & Treatment
+Use box plots and the **IQR method** to identify and handle outliers in:
+- `TimeOnSite`
+- `PurchaseAmount`
+- `ClickRate`
 
-### 7. Data Visualization
-Create visualizations to better understand the data:
-- Histograms
-- Boxplots
-- Distribution plots
-- Relationship plots
+Outliers are replaced with the column median to preserve data integrity.
 
-### 8. Univariate and Bivariate Analysis
-Analyze:
-- Individual variables
-- Relationships between variables
-- Customer behavior patterns
+### 7. 📈 Data Visualization
+Explore the data visually using:
+- Histograms (distributions)
+- Box plots (spread and outliers)
+- Bar charts (categorical features)
+- Scatter plots (relationships)
 
-### 9. Correlation Analysis
-Calculate correlations to identify strong and weak relationships between features.
+### 8. 🔬 Univariate & Bivariate Analysis
+- Analyze individual variable distributions
+- Compare variables against purchase amount
+- Identify customer behavior patterns across gender, device, and discount usage
 
-### 10. Conclusions
-Summarize the key findings and insights discovered during the analysis.
+### 9. 🔗 Correlation Analysis
+Compute and interpret correlations between numeric features to identify meaningful relationships.
 
-## Results
-The project provides:
-- A cleaned dataset
-- Statistical summaries
-- Visual insights
-- Correlation analysis
-- Customer behavior findings
+### 10. 💡 Conclusions
+Summarize key findings and business insights derived from the analysis.
 
-## How to Run
-1. Open the Jupyter Notebook.
-2. Install the required libraries.
-3. Run the notebook cells from top to bottom.
-4. Review the visualizations and conclusions.
+---
 
-## Authors
-Ahmad Essawii $ Mojahed Alkayyal.
-"""
+## 📋 Results
+
+- ✅ A fully cleaned and validated dataset
+- 📊 Statistical summaries for all key features
+- 🖼️ Visual insights across customer segments
+- 🔗 Correlation analysis between variables
+- 💼 Actionable customer behavior findings
+
+---
+
+## ▶️ How to Run
+
+1. Clone or download the project files
+2. Install the required libraries:
+   ```bash
+   pip install pandas numpy matplotlib
+   ```
+3. Open `main.ipynb` in Jupyter Notebook or JupyterLab
+4. Run all cells from top to bottom
+5. Review the visualizations and conclusions at the end
+
+---
+
+## 👨‍💻 Authors
+
+**Ahmad Essawii** &emsp;|&emsp; **Mojahed Alkayyal**
